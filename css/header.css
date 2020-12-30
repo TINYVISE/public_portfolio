@@ -332,13 +332,34 @@ nav i {
     height: 1px;
     margin-bottom: 5px;
     background-color: #fff;
+
+    transition: all 1s ease;
 }
 
 nav i:last-child {
     margin-bottom: 0px;
 }
 
+#about-page.active + nav i:first-child {
+    transform: rotate(-45deg);
+    margin-left: -8px;
+    /* z-index: 100; */
+    left: 5px;
+    width: 10px;
+    margin-bottom: 3px;
+}
 
+#about-page.active + nav i:nth-child( 2 ) {
+    margin-bottom: 3px;
+}
+
+#about-page.active + nav i:last-child {
+    transform: rotate(45deg);
+    margin-right: 8px;
+    /* z-index: 100; */
+    right: 5px;
+    width: 10px;
+}
 
 
 
@@ -351,6 +372,8 @@ nav i:last-child {
     left: -90%;
     z-index: 1000;
     background-image: linear-gradient( to right, #d1d1d1, #e8e8e8 );
+
+    transition: left 1s;
 }
 
 #about-page.active {

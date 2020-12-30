@@ -60,13 +60,13 @@
 
     </header>
 
+    <div id="about-page"></div>
+
     <nav>
         <i></i>
         <i></i>
         <i></i>
     </nav>
-
-    <div id="about-page"></div>
 
     <script src="js/main.js"></script>
 </body>
