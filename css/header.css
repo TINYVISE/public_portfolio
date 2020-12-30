@@ -1,0 +1,358 @@
+
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100px;
+    position: relative;
+    background-color: #fff;
+
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    width: 100%;
+
+    transition: background-color 1s;
+}
+
+header.active {
+    background-color: #132631;
+    transition: background-color 1s;
+}
+
+header section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* 
+==============================
+LOGO 
+*/
+
+header section #logo {
+    -webkit-mask: url( ../images/logo.svg ) no-repeat center;
+    mask: url( ../images/logo.svg ) no-repeat center;
+    background-color: black;
+    /* background-image: url( ../images/logo.svg ); */
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 50px;
+    width: 55px;
+    margin: 0px 5px;
+}
+
+header.active section #logo {
+    background-color: #5c6f7a;
+}
+
+@media ( min-width: 450px ) {
+    header section {
+        flex-basis: 80%;
+    }
+}
+
+@media ( min-width: 600px ) {
+    header section {
+        flex-basis: 60%;
+    }
+
+    header section #logo {
+        height: 50px;
+        width: 65px;
+    }
+}
+
+/* 
+==============================
+TREES 
+*/
+
+header section #trees-one,
+header section #trees-two {
+    flex: 1 0 auto;
+    height: 50px;
+    position: relative;
+    max-width: 250px;
+}
+
+header section .tree,
+header section .tree {
+    width: 1rem;
+    height: 1.2rem;
+    -webkit-mask: url( ../images/tree.svg ) no-repeat center;
+    mask: url( ../images/tree.svg ) no-repeat center;
+    background-color: black;
+    position: absolute;
+}
+
+#tree1 {
+    /* appearance */
+    background-color: #a9bf58;
+    top: 25%;
+    left: 15%;
+}
+
+#tree2 {
+    /* appearance */
+    background-color: #a0c12b;
+    top: 45%;
+    left: 30%;
+}
+
+#tree3 {
+    /* appearance */
+    background-color: #758245;
+    top: 25%;
+    left: 44%;
+}
+
+#tree4 {
+    /* appearance */
+    background-color: #799611;
+    top: 55%;
+    left: 56%;
+}
+
+#tree5 {
+    /* appearance */
+    background-color: #c1d37f;
+    top: 15%;
+    left: 65%;
+}
+
+#tree6 {
+    /* appearance */
+    background-color: #7f720f;
+    top: 50%;
+    left: 88%;
+}
+
+#tree7 {
+    /* appearance */
+    background-color: #a89214;
+    top: 38%;
+    left: 75%;
+}
+
+#tree8 {
+    /* appearance */
+    background-color: #a59028;
+    top: 15%;
+    left: 18%;
+}
+
+#tree9 {
+    /* appearance */
+    background-color: #d18b00;
+    top: 48%;
+    left: 5%;
+}
+
+#tree10 {
+    /* appearance */
+    background-color: #e59900;
+    top: 57%;
+    left: 30%;
+}
+
+#tree11 {
+    /* appearance */
+    background-color: #e8cc03;
+    top: 18%;
+    left: 42%;
+}
+
+#tree12 {
+    /* appearance */
+    background-color: #af7500;
+    top: 38%;
+    left: 60%;
+}
+
+#tree13 {
+    /* appearance */
+    background-color: #b55200;
+    top: 58%;
+    left: 77%;
+}
+
+/* 
+==============================
+STARTS 
+*/
+
+header section .star {
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+}
+
+header section .moon {
+    position: absolute;
+}
+
+#star1 {
+    top: 15%;
+    left: 12%;
+}
+
+#star2 {
+    top: 25%;
+    left: 16%;
+}
+
+#star3 {
+    top: 10%;
+    left: 22%;
+}
+
+#star4 {
+    top: 28%;
+    left: 26%;
+}
+
+#star5 {
+    top: 8%;
+    left: 33%;
+}
+
+#star6 {
+    top: 13%;
+    left: 35%;
+}
+
+#star7 {
+    top: 5%;
+    left: 39%;
+}
+
+#star8 {
+    top: 23%;
+    left: 44%;
+}
+
+#star9 {
+    top: 13%;
+    left: 50%;
+}
+
+#moon {
+    width: 10px;
+    height: 10px;
+    top: 14%;
+    left: 51%;
+}
+
+#star10 {
+    top: 16%;
+    left: 55%;
+}
+
+#star11 {
+    top: 13%;
+    left: 56%;
+}
+
+#star12 {
+    top: 31%;
+    left: 59%;
+}
+
+#star13 {
+    top: 13%;
+    left: 61%;
+}
+
+#star14 {
+    top: 6%;
+    left: 67%;
+}
+
+#star15 {
+    top: 13%;
+    left: 72%;
+}
+
+#star16 {
+    top: 25%;
+    left: 73%;
+}
+
+#star17 {
+    top: 13%;
+    left: 79%;
+}
+
+#star18 {
+    top: 16%;
+    left: 87%;
+}
+
+/* 
+==============================
+BURGER 
+*/
+
+nav {
+    background-color: #aa0000;
+    width: 35px;
+    height: 35px;
+    
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 20000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    flex-direction: column;
+    transition: background-color 1s;
+
+    cursor: pointer;
+}
+
+header.active + nav {
+    background-color: #5b686f;
+    transition: background-color 1s;
+}
+
+nav i {
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+nav i:last-child {
+    margin-bottom: 0px;
+}
+
+
+
+
+
+#about-page {
+    width: 90%;
+    height: 100%;
+    background-color: #e8e8e8;
+    position: absolute;
+    top: 0px;
+    left: -90%;
+    z-index: 1000;
+    background-image: linear-gradient( to right, #d1d1d1, #e8e8e8 );
+}
+
+#about-page.active {
+    left: 0px;
+}
