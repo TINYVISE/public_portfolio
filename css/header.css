@@ -366,16 +366,52 @@ nav i:last-child {
 #about-page {
     width: 90%;
     height: 100%;
-    background-color: #e8e8e8;
+    background-color: rgba( 255, 255, 255, 1 );
     position: absolute;
     top: 0px;
     left: -90%;
     z-index: 1000;
-    background-image: linear-gradient( to right, #d1d1d1, #e8e8e8 );
-
+    /* background-image: linear-gradient( to right, #d1d1d1, #e8e8e8 ); */
     transition: left 1s;
+
+    color: #45464D;
+    line-height: 1.4rem;
+    overflow: auto;
 }
 
 #about-page.active {
     left: 0px;
+}
+
+#about-page section#hero {
+    background-image: url(../images/studio_table.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 50vh;
+}
+
+
+
+#about-page section {
+    background-color: #f1f1f1;
+    padding: 4vh 7vw;
+}
+
+#about-page section:first-child {
+    margin-top: 35px;
+}
+
+#about-page section:nth-child( even ) {
+    background-color: #ebebeb;
+}
+
+#about-page section.header {
+    background-color: #fff;
+    text-align: center;
+    padding: 7vh;
+    color: #1f1f1f;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.2rem;
 }

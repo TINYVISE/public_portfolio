@@ -1,7 +1,7 @@
 @import 'header.css';
 
 :root {
-    --basefont: 16px;
+    --basefont: 14px;
 }
 
 html {
@@ -12,6 +12,7 @@ html {
 body {
     font-family: 'Roboto', arial, sans-serif;
     font-size: var( --basefont );
+    -webkit-font-smoothing: antialiased;
 }
 
 *,
@@ -28,4 +29,33 @@ body {
 
 ul {
     list-style: none;
+}
+
+
+/* width */
+.scroll::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+.scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    background-color: yellow;
+    background-image: url( ../images/scrollbar_track.gif );
+    width: 3px;
+}
+  
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+    background: #e7bd6d; 
+    background: #858585; 
+    /* background-color: #aa0000; */
+    width: 10px;
+}
+  
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #e7bd6d; 
+    background: #858585; 
+    background-color: #aa0000; 
+    width: 10px;
 }
