@@ -1,5 +1,8 @@
 @import 'header.css';
 @import 'burger_page.css';
+@import 'footer.css';
+@import 'home.css';
+@import 'gallery-project.css';
 
 :root {
     --basefont: 14px;
@@ -14,6 +17,7 @@ body {
     font-family: 'Roboto', arial, sans-serif;
     font-size: var( --basefont );
     -webkit-font-smoothing: antialiased;
+    background-color: #f1f1f1;
 }
 
 *,

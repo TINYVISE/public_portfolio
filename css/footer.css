@@ -1,0 +1,41 @@
+footer > section main {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+footer {
+    /* structure */
+    width: 100%;
+    /* appearance */
+    height: 150px;
+    background-color: #fff;
+}
+
+footer > section {
+    /* structure */
+    max-width: 1000px;
+    margin: 0px auto;
+    /* appearance */
+    height: 100%;
+}
+
+footer > section main {
+    /* structure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* fonts */
+    text-align: center;
+
+    /* -webkit-mask: url( ../images/logo.svg ) no-repeat center;
+    mask: url( ../images/logo.svg ) no-repeat center;
+    background-color: black; */
+    background-image: url( ../images/logo.svg );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+}
+
+
+

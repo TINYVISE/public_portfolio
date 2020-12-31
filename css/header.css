@@ -306,7 +306,7 @@ nav {
     width: 35px;
     height: 35px;
     
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
     z-index: 20000;
@@ -320,6 +320,10 @@ nav {
 
     cursor: pointer;
 }
+
+
+
+
 
 header.active + nav {
     background-color: #5b686f;
@@ -335,6 +339,8 @@ nav i {
 
     transition: all 1s ease;
 }
+
+
 
 nav i:last-child {
     margin-bottom: 0px;
@@ -359,4 +365,61 @@ nav i:last-child {
     /* z-index: 100; */
     right: 5px;
     width: 10px;
+}
+
+
+
+
+
+
+
+.red-box {
+    background-color: #aa0000;
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    flex-direction: column;
+    transition: background-color 1s;
+
+    cursor: pointer;
+}
+
+.red-box i {
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    /* margin-bottom: 5px; */
+    background-color: #fff;
+    transition: all 1s ease;
+}
+
+.red-box-arrow-up {
+    display: flex;
+    flex-direction: row;
+}
+
+.red-box-arrow-up i {
+    /* transform: rotate(90deg); */
+    display: block;
+    width: 1px;
+    height: 15px;
+    /* margin-bottom: 0px; */
+}
+
+.red-box-arrow-up i:first-child {
+    margin-right: 3px;
+    height: 10px;
+    transform: rotate(45deg);
+    margin-bottom: 7px;
+}
+
+.red-box-arrow-up i:last-child {
+    margin-left: 3px;
+    height: 10px;
+    transform: rotate(-45deg);
+    margin-bottom: 7px;
 }
