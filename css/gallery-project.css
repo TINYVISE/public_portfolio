@@ -20,28 +20,28 @@
     top: 100px;
 }
 
-#gallery-project div:nth-child( 1 ) {
+#gallery-project > div:nth-child( 1 ) {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
 }
 
-#gallery-project div:nth-child( 2 ) {
+#gallery-project > div:nth-child( 2 ) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
 
-#gallery-project div:nth-child( 3 ) {
+#gallery-project > div:nth-child( 3 ) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: pink;
 }
 
-#gallery-project div:nth-child( 4 ) {
+#gallery-project > div:nth-child( 4 ) {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
 }
 
-#gallery-project div:nth-child( 5 ) {
+#gallery-project > div:nth-child( 5 ) {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
     display: flex;

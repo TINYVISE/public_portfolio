@@ -64,3 +64,15 @@ ul {
     background-color: #aa0000; 
     width: 10px;
 }
+
+
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax( 100px, 1fr ) );
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+
+.gallery-wrapper .slide {
+    border: 2px solid red;
+}
